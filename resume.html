@@ -4,59 +4,70 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="website icon" type="png" href="Pery_RoyBowo.png">
-    <link rel="stylesheet" href="output/home.css">
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/output/contack.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+    <script>
+        // On page load or when changing themes, best to add inline in `head` to avoid FOUC
+        if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.classList.add('dark');
+        } else {
+            document.documentElement.classList.remove('dark')
+        }
+    </script>
     <title>Pery RoyBowo</title>
 </head>
-<body>
-    <header class="fixed bg-white z-50 w-[100rem] p-3">
+<body class="dark:bg-gelap">
+    <header class="fixed top-0 bg-white dark:bg-gray-800 z-50 w-[100rem] p-3">
         <nav class="flex justify-around items-center">
             <p class="text-2xl text-blue-600 font-bold">Pery RoyBowo</p>
-            <ul class="flex justify-center space-x-6  text-gray-500 font-semibold">
-                <li><a href="home.html" class=" duration-75 hover:border-b-2 hover:border-b-pink-600">Home</a></li>
-                <li><a href="resume.html" class="duration-75 hover:border-b-2 hover:border-b-pink-600">Resume</a></li>
-                <li><a href="project.html" class="duration-75 hover:border-b-2 hover:border-b-pink-600">Projects</a></li>
-                <li><a href="contact.html" class="duration-75 hover:border-b-2 hover:border-b-pink-600">Contact</a></li>
-                <button id="dropdownDefaultButton" data-dropdown-toggle="dropdown" class="flex items-center duration-150 hover:border-b-2 hover:border-b-pink-600" type="button">My Study<svg class="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+            <ul class="flex justify-center space-x-6  text-gray-500 font-semibold dark:text-white">
+                <li><a href="home.html" class=" duration-75 hover:border-b hover:border-b-pink-600">Home</a></li>
+                <li><a href="resume.html" class="duration-75 hover:border-b hover:border-b-pink-600">Resume</a></li>
+                <li><a href="project.html" class="duration-75 hover:border-b hover:border-b-pink-600">Projects</a></li>
+                <li><a href="contact.html" class="duration-75 hover:border-b hover:border-b-pink-600">Contact</a></li>
+                <button id="dropdownDefaultButton" data-dropdown-toggle="dropdown" class="flex items-center duration-150 hover:border-b hover:border-b-pink-600" type="button">My Study<svg class="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4" />
                 </svg>
             </button>
-            <div id="dropdown" class="z-10 hidden  bg-white  rounded-lg shadow w-36">
+            <div id="dropdown" class="z-10 hidden  bg-white dark:bg-gray-800  rounded-lg shadow w-36">
                 <ul class="py-2 text-sm text-black " aria-labelledby="dropdownDefaultButton">
                     <li>
-                        <a href="semester1.html" class="block  px-4 py-1 hover:bg-gray-50 text-black">Semester 1</a>
+                        <a href="semester1.html" class="block  px-4 py-1 hover:bg-gray-50 hover:dark:bg-gray-600 text-black dark:text-white ">Semester 1</a>
                     </li>
                     <li>
-                        <a href="semester2.html" class="block  px-4 py-1 hover:bg-gray-50 text-black">Semester 2</a>
+                        <a href="semester2.html" class="block  px-4 py-1 hover:bg-gray-50 hover:dark:bg-gray-600 text-black dark:text-white">Semester 2</a>
                     </li>
                     <li>
-                        <a href="semester3.html" class="block  px-4 py-1 hover:bg-gray-50 text-black">Semester 3</a>
+                        <a href="semester3.html" class="block  px-4 py-1 hover:bg-gray-50 hover:dark:bg-gray-600 text-black dark:text-white">Semester 3</a>
                     </li>
                     <li>
-                        <a href="semester4.html" class="block  px-4 py-1 hover:bg-gray-50 text-black">Semester 4</a>
+                        <a href="semester4.html" class="block  px-4 py-1 hover:bg-gray-50 hover:dark:bg-gray-600 text-black dark:text-white">Semester 4</a>
                     </li>
                 </ul>
             </div>
-            <button id="dropdownDefault" data-dropdown-toggle="dropdown1" class="flex items-center duration-150 hover:border-b-2 hover:border-b-pink-600" type="button">Entertaiment<svg class="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+            <button id="dropdownDefault" data-dropdown-toggle="dropdown1" class="flex items-center duration-150 hover:border-b hover:border-b-pink-600" type="button">Entertaiment<svg class="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4" />
             </svg>
         </button>
-        <div id="dropdown1" class="z-10 hidden  bg-white  rounded-lg shadow w-36">
+        <div id="dropdown1" class="z-10 hidden  bg-white dark:bg-gray-800  rounded-lg shadow w-36">
             <ul class="py-2 text-sm text-black " aria-labelledby="dropdownDefault">
                 <li>
-                    <a href="listenmusic.html" class="block  px-4 py-1 hover:bg-gray-50 text-black">Listen Music</a>
+                    <a href="listenmusic.html" class="block  px-4 py-1 hover:bg-gray-50 hover:dark:bg-gray-600 text-black dark:text-white">Listen Music</a>
                 </li>
                 <li>
-                    <a href="playgames.html" class="block  px-4 py-1 hover:bg-gray-50 text-black">Play Games</a>
+                    <a href="playgames.html" class="block  px-4 py-1 hover:bg-gray-50 hover:dark:bg-gray-600 text-black dark:text-white">Play Games</a>
                 </li>
                 <li>
-                    <a href="error404.html" class="block  px-4 py-1 hover:bg-gray-50 text-black">Blog</a>
+                    <a href="error404.html" class="block  px-4 py-1 hover:bg-gray-50 hover:dark:bg-gray-600 text-black dark:text-white">Blog</a>
                 </li>
                 
             </ul>
         </div>
             </ul>
+            <button id="theme-toggle" type="button" class="text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5">
+                <svg id="theme-toggle-dark-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
+                <svg id="theme-toggle-light-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
+            </button>
         </nav>
     </header>
     <main class="py-20">
@@ -84,7 +95,7 @@ fill="#000000" stroke="none">
         </div>
         <div class="mt-12">
             <div class="grid grid-cols-1 ">
-                <div class="border border-white shadow-2xl max-w-4xl rounded-xl mx-auto w-[50rem] pb-12 "> 
+                <div class="border border-white dark:bg-gray-900 shadow-2xl max-w-4xl rounded-xl mx-auto w-[50rem] pb-12 "> 
                     <div class="flex mt-32 ml-4 float-left">
                         <div class="bg-gray-50 rounded-xl w-[15rem] h-[12rem]">
                             <p class="text-[16px] text-blue-600 font-bold ml-6">Jan 2017 - Sep 2023</p>
@@ -101,14 +112,14 @@ fill="#000000" stroke="none">
                     </div>
                       
                        
-                       <ol  class="font-bold text-gray-700 mr-16 ml-[18rem] leading-loose mt-2">
+                       <ol  class="font-bold text-gray-700 mr-16 ml-[18rem] leading-loose mt-2 dark:text-white">
                         <li type="1">HUB Leader GrabExpress (Jan 2017 - Mar 2018)</li>
                         <li type="1">DAX Engagement Support GrabExpress (Apr 2018 - May 2020)</li>
                         <li type="1">Data Entry and Collection Support Coordinator (Jun 2020 - Feb 2023)</li>
                         <li type="1">Safety & Quality PMO Associate (Mar 2023 - Sep 2023)</li>
                        </ol>
                        <div class="ml-[19rem]">
-                       <ul role="list" class=" marker:to-black list-disc font-medium text-balance mr-16 ">
+                       <ul role="list" class=" marker:to-black list-disc font-medium text-balance mr-16 dark:text-white">
                         <li >Extract and clean data from Grab's database.</li>
                         <li >Analyze data using Excel and SQL to find trends and insights.</li>
                         <li >Create visualizations (charts, graphs, dashboards) to share findings with non-technical stakeholders.</li>
@@ -120,10 +131,10 @@ fill="#000000" stroke="none">
                     </div>
                 </div>
             
-                <div class="border border-white shadow-2xl max-w-4xl rounded-xl mx-auto w-[50rem] pb-6 mt-16"> 
+                <div class="border border-white dark:bg-gray-900 shadow-2xl max-w-4xl rounded-xl mx-auto w-[50rem] pb-6 mt-16"> 
                     <div class="flex mt-12 ml-4 float-left">
                         <div class="bg-gray-50 rounded-xl w-[15rem] h-[9rem]">
-                            <div class="mt-6">
+                            <div class="mt-6 ">
                                 <p class="text-[16px] text-blue-600 font-bold ml-6">Nov 2013 - Oct 2015</p>
                                 <p class="mt-2 ml-6 font-semibold">Staff Admin & Inventory</p>
                                 <p class="block text-[14px] ml-6 text-gray-500">PT Quadran Inovasi utama</p>
@@ -133,7 +144,7 @@ fill="#000000" stroke="none">
                         </div>
                     </div>
                        <div class="ml-[19rem] mt-2">
-                       <ul role="list" class="marker:black list-disc font-medium text-balance mr-16 ">
+                       <ul role="list" class="marker:black list-disc font-medium text-balance mr-16 dark:text-white">
                         <li>Creating daily incoming orders and sales reports from all branches to be forwarded to upper management.</li>
                         <li>Creating Delivery Orders (DO), Purchase Orders (PO), and Work Orders (SPK).</li>
                         <li>Receiving incoming phone calls from customers.</li>
@@ -142,7 +153,7 @@ fill="#000000" stroke="none">
                     </div>
                     </div>
                     
-                <div class="border border-white shadow-2xl max-w-4xl rounded-xl mx-auto w-[50rem] pb-24 mt-16"> 
+                <div class="border border-white dark:bg-gray-900 shadow-2xl max-w-4xl rounded-xl mx-auto w-[50rem] pb-24 mt-16"> 
                     <div class="flex mt-4 ml-4 float-left">
                         <div class="bg-gray-50 rounded-xl w-[15rem] h-[13rem]">
                             <div class="mt-2">
@@ -161,7 +172,7 @@ fill="#000000" stroke="none">
                         </div>
                     </div>
                        <div class="ml-[19rem] mt-2">
-                       <ul role="list" class="marker:black list-disc font-medium text-balance mr-16 ">
+                       <ul role="list" class="marker:black list-disc font-medium text-balance mr-16 dark:text-white">
                         <li>Creating daily incoming orders and sales reports from all branches to be forwarded to upper management.</li>
                         <li>Entering sales data into the sales program.</li>
                         <li>Creating daily sales reports to be sent via email to the Head Office every day.</li>
@@ -174,7 +185,7 @@ fill="#000000" stroke="none">
              <div class="ml-[25rem] mt-20">
                 <p class="text-[32px] text-pink-600 font-semibold translate-y-10">Education</p>
              </div>
-             <div class="border border-white shadow-2xl max-w-4xl rounded-xl mx-auto w-[50rem] pb-[17rem] mt-16"> 
+             <div class="border border-white dark:bg-gray-900 shadow-2xl max-w-4xl rounded-xl mx-auto w-[50rem] pb-[17rem] mt-16"> 
                 <div class="flex mt-4 ml-4 float-left">
                     <div class="bg-gray-50 rounded-xl w-[48rem] h-[15rem]">
                         <div class="mt-6 text-center">
@@ -197,10 +208,10 @@ fill="#000000" stroke="none">
               <div class="ml-[25rem] mt-20 ">
                 <p class="text-[32px] text-blue-600 font-semibold translate-y-10">My Certification</p>
              </div>
-             <div class="border border-white shadow-2xl max-w-4xl rounded-xl mx-auto w-[50rem] pb-[2rem] mt-16"> 
+             <div class="border border-white dark:bg-gray-900 shadow-2xl max-w-4xl rounded-xl mx-auto w-[50rem] pb-[2rem] mt-16"> 
                 <div class="flex items-center gap-6 mt-6 ml-4">
                     <img src="google_data_studio_sertifikat.png" alt="" class="w-[15rem] rounded">
-                    <div>
+                    <div class="dark:text-white">
                         <p class="text-[16px] font-semibold">Data Analisis dengan Google Data Studio</p>
                         <p>Skill Academy</p>
                         <p>Published Mar 2021</p>
@@ -209,10 +220,10 @@ fill="#000000" stroke="none">
                     </div>
                 </div>
               </div>
-             <div class="border border-white shadow-2xl max-w-4xl rounded-xl mx-auto w-[50rem] pb-[2rem] mt-16"> 
+             <div class="border border-white dark:bg-gray-900 shadow-2xl max-w-4xl rounded-xl mx-auto w-[50rem] pb-[2rem] mt-16"> 
                 <div class="flex items-center gap-6 mt-6 ml-4">
                     <img src="sertifikat_python.png" alt="" class="w-[15rem] rounded">
-                    <div>
+                    <div class="dark:text-white">
                         <p class="text-[16px] font-semibold">PCAP: Programming Essentials in Python</p>
                         <p>Cisco Networking Academy</p>
                         <p>Published Jul 2023</p>
@@ -221,10 +232,10 @@ fill="#000000" stroke="none">
                     </div>
                 </div>
               </div>
-             <div class="border border-white shadow-2xl max-w-4xl rounded-xl mx-auto w-[50rem] pb-[2rem] mt-16"> 
+             <div class="border border-white dark:bg-gray-900 shadow-2xl max-w-4xl rounded-xl mx-auto w-[50rem] pb-[2rem] mt-16"> 
                 <div class="flex items-center gap-6 mt-6 ml-4">
                     <img src="sertifikat_developer_alibaba_cloud.png" alt="" class="w-[15rem] rounded">
-                    <div>
+                    <div class="dark:text-white">
                         <p class="text-[16px] font-semibold">Alibaba Cloud Certified Developer</p>
                         <p>Alibaba Cloud</p>
                         <p>Published Dec 2023 Expires Dec 2025</p>
@@ -234,10 +245,10 @@ fill="#000000" stroke="none">
                     </div>
                 </div>
               </div>
-             <div class="border border-white shadow-2xl max-w-4xl rounded-xl mx-auto w-[50rem] pb-[2rem] mt-16"> 
+             <div class="border border-white dark:bg-gray-900 shadow-2xl max-w-4xl rounded-xl mx-auto w-[50rem] pb-[2rem] mt-16"> 
                 <div class="flex items-center gap-6 mt-6 ml-4">
                     <img src="sertifikat_data_analysis_alibaba_cloud.png" alt="" class="w-[15rem] rounded">
-                    <div>
+                    <div class="dark:text-white">
                         <p class="text-[16px] font-semibold">Alibaba Cloud Data Analysis Specialty Certification</p>
                         <p>Alibaba Cloud</p>
                         <p>Published Dec 2023 Expires Dec 2025</p>
@@ -247,10 +258,10 @@ fill="#000000" stroke="none">
                     </div>
                 </div>
               </div>
-             <div class="border border-white shadow-2xl max-w-4xl rounded-xl mx-auto w-[50rem] pb-[2rem] mt-16"> 
+             <div class="border border-white dark:bg-gray-900 shadow-2xl max-w-4xl rounded-xl mx-auto w-[50rem] pb-[2rem] mt-16"> 
                 <div class="flex items-center gap-6 mt-6 ml-4">
                     <img src="Sertifikat_MTCNA_PeryRoyBowo.jpg" alt="" class="w-[15rem] rounded">
-                    <div>
+                    <div class="dark:text-white">
                         <p class="text-[16px] font-semibold">MikroTik Certified Network Associate (MTCNA)</p>
                         <p>MikroTik</p>
                         <p>Published Feb 2024 Expires Feb 2027</p>
@@ -259,10 +270,10 @@ fill="#000000" stroke="none">
                     </div>
                 </div>
               </div>
-             <div class="border border-white shadow-2xl max-w-4xl rounded-xl mx-auto w-[50rem] pb-[2rem] mt-16"> 
+             <div class="border border-white dark:bg-gray-900 shadow-2xl max-w-4xl rounded-xl mx-auto w-[50rem] pb-[2rem] mt-16"> 
                 <div class="flex items-center gap-6 mt-6 ml-4">
                     <img src="sertifikat_zahir_basis_data_pery.jpg" alt="" class="w-[15rem] rounded">
-                    <div>
+                    <div class="dark:text-white">
                         <p class="text-[16px] font-semibold">Sertifikat Zahir Basis Data</p>
                         <p>Zahir</p>
                         <p>Published Feb 2024</p>
@@ -271,7 +282,7 @@ fill="#000000" stroke="none">
                     </div>
                 </div>
               </div>
-                <div class="border border-white shadow-2xl max-w-4xl rounded-xl mx-auto w-[50rem] pb-[2rem] mt-16">  
+                <div class="border border-white dark:bg-gray-900 shadow-2xl max-w-4xl rounded-xl mx-auto w-[50rem] pb-[2rem] mt-16">  
                     <div class="m-16 flex items-center gap-4">
                         <div class="flex justify-center w-12 p-2 rounded-lg shadow-blue-600 bg-gradient-to-br from-blue-800 from-30% via-purple-600 via-60% to-pink-600 to-100%">
                             <svg class="fill-white w-6 translate-y-1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  version="1.1"  viewBox="0 0 846.66 1058.325" x="0px" y="0px"><defs></defs><g><path  d="M628.91 275.97l-294.91 294.91 42.65 42.65 -187.09 187.09c-39.47,39.47 -104.06,39.47 -143.53,0l0 0c-39.46,-39.46 -39.46,-104.05 0,-143.52l187.1 -187.09 42.65 42.65 294.9 -294.91 -9.98 -100.83 205.21 -100.49 64.32 64.32 -100.49 205.21 -100.83 -9.99zm-326.73 -212.43c44.42,44.42 57.26,108.44 38.56,164.22l93.93 93.92 -100.74 100.74 -93.93 -93.93c-55.77,18.71 -119.79,5.86 -164.21,-38.56 -41.45,-41.45 -55.4,-99.96 -41.89,-152.92l66 66c15.78,15.78 41.61,15.78 57.4,-0.01l38.45 -38.45c15.79,-15.79 15.79,-41.62 0,-57.41l-75.17 -75.17c59.4,-28.06 132.48,-17.54 181.6,31.57zm222.8 348.45l93.92 93.93c55.77,-18.7 119.8,-5.86 164.21,38.56 49.12,49.12 59.64,122.2 31.58,181.6l-75.18 -75.18c-15.78,-15.78 -41.61,-15.78 -57.4,0l-38.46 38.46c-15.79,15.78 -15.79,41.62 0,57.4l66 66c-52.96,13.51 -111.48,-0.45 -152.92,-41.89 -44.42,-44.42 -57.27,-108.45 -38.56,-164.22l-93.93 -93.92 100.74 -100.74z"/></g></svg>      
@@ -376,7 +387,7 @@ fill="#000000" stroke="none">
     </main>
     <footer>
         <div class="container flex justify-around mt-4 space-x-[25rem] mb-4">
-            <p class="">Copyright©Pery RoyBowo 2023</p>
+            <p class="dark:text-white">Copyright©Pery RoyBowo 2023</p>
             <ul class="flex space-x-10 underline text-blue-600">
                 <li><a href="">Project</a></li>
                 <li><a href="">Resume</a></li>
@@ -395,3 +406,45 @@ fill="#000000" stroke="none">
     
 </body>
 </html>
+<script>
+    var themeToggleDarkIcon = document.getElementById('theme-toggle-dark-icon');
+var themeToggleLightIcon = document.getElementById('theme-toggle-light-icon');
+
+// Change the icons inside the button based on previous settings
+if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+    themeToggleLightIcon.classList.remove('hidden');
+} else {
+    themeToggleDarkIcon.classList.remove('hidden');
+}
+
+var themeToggleBtn = document.getElementById('theme-toggle');
+
+themeToggleBtn.addEventListener('click', function() {
+
+    // toggle icons inside button
+    themeToggleDarkIcon.classList.toggle('hidden');
+    themeToggleLightIcon.classList.toggle('hidden');
+
+    // if set via local storage previously
+    if (localStorage.getItem('color-theme')) {
+        if (localStorage.getItem('color-theme') === 'light') {
+            document.documentElement.classList.add('dark');
+            localStorage.setItem('color-theme', 'dark');
+        } else {
+            document.documentElement.classList.remove('dark');
+            localStorage.setItem('color-theme', 'light');
+        }
+
+    // if NOT set via local storage previously
+    } else {
+        if (document.documentElement.classList.contains('dark')) {
+            document.documentElement.classList.remove('dark');
+            localStorage.setItem('color-theme', 'light');
+        } else {
+            document.documentElement.classList.add('dark');
+            localStorage.setItem('color-theme', 'dark');
+        }
+    }
+    
+});
+</script>
