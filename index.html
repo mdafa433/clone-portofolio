@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="website icon" type="png" href="Pery_RoyBowo.png">
+    <link rel="website icon" type="png" href="bapak.png">
     <link rel="stylesheet" href="output/contack.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
     <script>
@@ -16,9 +16,20 @@
     </script>
     <title>Pery RoyBowo</title>
 </head>
-<body class="dark:bg-gelap">
+<body class="dark:bg-gelap ">
+   
     <header class="fixed top-0 bg-white dark:bg-gray-800 z-50 w-screen p-3">
-        <nav class="flex justify-around items-center">
+         <!--LOADER -->
+         <div id="loader-container" class="fixed inset-0 flex items-center justify-center bg-white dark:bg-black z-50 text-black dark:text-white gap-2 font-bold hover:cursor-default">
+            Loading
+            <svg class="bg-black dark:bg-white border-4 border-red-600 animate-spin" version="1.1" id="loader" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 50 50" xml:space="preserve" width="50" height="50">
+              <circle fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round" cx="25" cy="25" r="20" style="opacity: 0.2;"/>
+              <circle fill="#000" stroke="#fff" stroke-width="4" stroke-linecap="round" cx="25" cy="25" r="20">
+              </circle>
+            </svg>
+        </div>
+        <!--END LOADER -->
+        <nav  class="flex justify-around items-center">
             <p class="text-2xl text-blue-600 font-bold">Pery RoyBowo</p>
             <ul class="flex justify-center space-x-6  text-gray-500 font-semibold dark:text-white">
                 <li><a href="index.html" class=" duration-75 hover:border-b hover:border-b-pink-600">Home</a></li>
@@ -72,7 +83,7 @@
     </header>
     
     <!-- end navbar -->
-<main class="ml-[14rem] mt-[10rem] mb-[40rem] sm:mb[] md:mb-[] lg:mb-[] xl:mb-[50rem] 2xl:mb-0">    
+<main id="content" class="ml-[14rem] mt-[10rem] mb-[40rem] sm:mb[] md:mb-[] lg:mb-[] xl:mb-[50rem] 2xl:mb-0 opacity-0 transition-opacity duration-2000">    
     <div class="ml-[0rem] sm:ml-[] md:ml-[] lg:ml-[] xl:ml-[9rem] 2xl:ml-[34rem] translate-y-0 sm:  md: lg: xl:translate-y-[40rem] 2xl:translate-y-0">
         <div class="shadow-xl overflow-hidden rounded-[5rem] -z-50 shadow-blue-600 bg-gradient-to-br from-blue-800 from-10% via-purple-600 via-40% to-pink-600 to-100%  w-20 sm:w-[40rem] p-20 sm:p-72 absolute">
         <img src="bapak.png" alt="" class="w-[20rem] sm:w-[37rem] -z-50 object-cover absolute bottom-[1px] right-5 ">
@@ -94,10 +105,10 @@
     </div>
     <div class="container mx-auto space-x-12 mt-8 flex items-center">
             <a href="resume.html" class="text-center bg-blue-700 duration-300 hover:bg-blue-800 hover:dark:bg-blue-900 rounded-lg text-xl text-white p-3 w-[10rem]">Resume</a>      
-            <a href="project.html" class="border text-center border-black dark:border-white rounded-lg text-xl text-black dark:text-white transform duration-300 hover:text-white hover:dark:text-black hover:bg-gray-800 hover:dark:bg-white  p-3 w-[10rem]">Projects</a>
+            <a href="project.html" class="border text-center border-black dark:border-white rounded-lg text-xl text-black dark:text-white duration-300 hover:text-white hover:dark:text-black hover:bg-gray-800 hover:dark:bg-white  p-3 w-[10rem]">Projects</a>
     </div>
 </main>
-<div class="text-center bg-gray-800 dark:bg-black mt-20 p-20">
+<div id="article" class="text-center bg-gray-800 dark:bg-black mt-20 p-20 opacity-0 transition-opacity duration-2000">
     <p class="text-[48px] bg-clip-text text-transparent bg-gradient-to-r from-blue-800 from-40% via-purple-600 via-40% to-pink-600 to-60%">About Me</p>
     <p class=" text-gray-500 dark:text-gray-400 text-[16px] px-[21rem] mt-[1.5rem]">With a unique blend of skills in Web Development, Data Analysis, Marketing, Project Management Office and Administrative Management, I craft seamless online experiences that drive results and efficiency. Dive into my portfolio and witness the fusion of technology and strategy.</p>
 </div>
@@ -112,15 +123,25 @@
         </ul>
     </div>
 </footer>
-<div class="fixed bottom-4 right-4 xl:right-80 2xl:right-4 z-50">
-    <a class="block w-16 h-16" href="https://wa.me/6285258589100" rel="noopener" title="Open WhatsApp" target="_blank">
+<div id="wa" class="fixed bottom-4 right-4 z-50 opacity-0 transition-opacity duration-2000">
+    <a class="block w-16 h-16" href="https://wa.me/62123456789" rel="noopener" title="Open WhatsApp" target="_blank">
         <svg width="64" height="64" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
             <circle cx="32" cy="32" r="32" fill="#008361"></circle>
             <path d="M11.375 52.625L14.2745 42.0323C12.4853 38.9317 11.5452 35.4169 11.5469 31.8127C11.552 20.5445 20.7216 11.375 31.988 11.375C37.4553 11.3767 42.5875 13.5062 46.4478 17.37C50.3064 21.2337 52.4308 26.3694 52.4291 31.8316C52.4239 43.1014 43.2544 52.2709 31.988 52.2709C28.5677 52.2692 25.1972 51.4116 22.2117 49.7822L11.375 52.625ZM22.7136 46.0817C25.5942 47.7919 28.3442 48.8162 31.9811 48.818C41.3448 48.818 48.9727 41.197 48.9778 31.8281C48.9813 22.4403 41.3895 14.8297 31.9948 14.8262C22.6242 14.8262 15.0016 22.4472 14.9981 31.8144C14.9964 35.6386 16.117 38.502 17.9991 41.4978L16.282 47.7678L22.7136 46.0817ZM42.285 36.6905C42.1578 36.4773 41.8175 36.3502 41.3053 36.0941C40.7948 35.838 38.2837 34.6022 37.8145 34.432C37.347 34.2619 37.0067 34.1759 36.6647 34.6881C36.3244 35.1986 35.3447 36.3502 35.0473 36.6905C34.75 37.0308 34.4509 37.0738 33.9405 36.8177C33.43 36.5616 31.7834 36.0236 29.8327 34.2825C28.315 32.9281 27.2889 31.2558 26.9916 30.7436C26.6942 30.2331 26.9606 29.9564 27.215 29.702C27.4453 29.4734 27.7255 29.1056 27.9816 28.8066C28.2411 28.5109 28.3253 28.2978 28.4972 27.9558C28.6673 27.6155 28.5831 27.3164 28.4542 27.0603C28.3253 26.8059 27.3044 24.2914 26.8798 23.2688C26.4639 22.2736 26.0428 22.4077 25.73 22.3922L24.7503 22.375C24.41 22.375 23.8566 22.5022 23.3891 23.0144C22.9216 23.5266 21.6016 24.7606 21.6016 27.2752C21.6016 29.7897 23.432 32.2183 23.6864 32.5586C23.9425 32.8989 27.2872 38.0586 32.4108 40.2706C33.6294 40.7966 34.5816 41.1111 35.3223 41.3466C36.5461 41.735 37.6598 41.68 38.5398 41.5494C39.5212 41.4033 41.5614 40.3136 41.9877 39.1208C42.4139 37.9262 42.4139 36.9036 42.285 36.6905Z" fill="white"></path>
         </svg>
     </a>
 </div>
-
+<script>
+    // Hide loader when page fully loads
+    window.addEventListener('load', function() {
+        setTimeout(function() {
+            document.getElementById('loader-container').style.display = 'none';
+            document.getElementById('content').style.opacity = '1';
+            document.getElementById('article').style.opacity = '1';
+            document.getElementById('wa').style.opacity = '1';
+        }, 700);
+    });
+</script>
 </body>
 </html>
 <script>
