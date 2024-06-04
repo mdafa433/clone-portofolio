@@ -17,7 +17,7 @@
     <title>Pery RoyBowo</title>
 </head>
 <body class="dark:bg-gelap">
-    <header class="fixed top-0 bg-white dark:bg-gray-800 z-50 w-[100rem] p-3">
+    <header class="fixed top-0 bg-white dark:bg-gray-800 z-50 w-screen p-3">
         <!--LOADER -->
         <div id="loader-container" class="fixed inset-0 flex items-center justify-center bg-white dark:bg-black z-50 text-black dark:text-white gap-2 font-bold hover:cursor-default">
             Loading
@@ -29,17 +29,22 @@
         </div>
         <!--END LOADER -->
         <nav class="flex justify-around items-center">
+            <button id="sidebar-toggle" class="lg:hidden xl:hidden text-gray-500 dark:text-gray-400 focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
             <p class="text-2xl text-blue-600 font-bold">Pery RoyBowo</p>
-            <ul class="flex justify-center space-x-6  text-gray-500 font-semibold dark:text-white">
+            <ul class="flex justify-center space-x-6 si:hidden hp:hidden sm:hidden md:hidden text-gray-500 font-semibold dark:text-white">
                 <li><a href="index.html" class=" duration-75 hover:border-b hover:border-b-pink-600">Home</a></li>
                 <li><a href="resume.html" class="duration-75 hover:border-b hover:border-b-pink-600">Resume</a></li>
                 <li><a href="project.html" class="duration-75 hover:border-b hover:border-b-pink-600">Projects</a></li>
                 <li><a href="contact.html" class="duration-75 hover:border-b hover:border-b-pink-600">Contact</a></li>
-                <button id="dropdownDefaultButton" data-dropdown-toggle="dropdown" class="flex items-center duration-150 hover:border-b hover:border-b-pink-600" type="button">My Study<svg class="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                <button id="dropdownDefaultButton" data-dropdown-toggle="dropdownsemester" class="flex items-center duration-150 hover:border-b hover:border-b-pink-600" type="button">My Study<svg class="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4" />
                 </svg>
             </button>
-            <div id="dropdown" class="z-10 hidden  bg-white dark:bg-gray-800  rounded-lg shadow w-36">
+            <div id="dropdownsemester" class="z-10 hidden  bg-white dark:bg-gray-800  rounded-lg shadow w-36">
                 <ul class="py-2 text-sm text-black " aria-labelledby="dropdownDefaultButton">
                     <li>
                         <a href="semester1.html" class="block  px-4 py-1 hover:bg-gray-50 hover:dark:bg-gray-600 text-black dark:text-white ">Semester 1</a>
@@ -55,11 +60,11 @@
                     </li>
                 </ul>
             </div>
-            <button id="dropdownDefault" data-dropdown-toggle="dropdown1" class="flex items-center duration-150 hover:border-b hover:border-b-pink-600" type="button">Entertaiment<svg class="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+            <button id="dropdownDefault" data-dropdown-toggle="dropdownenter" class="flex items-center duration-150 hover:border-b hover:border-b-pink-600" type="button">Entertaiment<svg class="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4" />
             </svg>
         </button>
-        <div id="dropdown1" class="z-10 hidden  bg-white dark:bg-gray-800  rounded-lg shadow w-36">
+        <div id="dropdownenter" class="z-10 hidden  bg-white dark:bg-gray-800  rounded-lg shadow w-36">
             <ul class="py-2 text-sm text-black " aria-labelledby="dropdownDefault">
                 <li>
                     <a href="listenmusic.html" class="block  px-4 py-1 hover:bg-gray-50 hover:dark:bg-gray-600 text-black dark:text-white">Listen Music</a>
@@ -80,9 +85,57 @@
             </button>
         </nav>
     </header>
+    <aside id="sidebar" class="fixed inset-y-0 left-0 bg-white dark:bg-gray-800 w-64 transform -translate-x-full transition-transform duration-300 z-40">
+        <div class="p-4">
+            <ul class="space-y-2 text-gray-700 dark:text-gray-300">
+                <li><a href="index.html" class="block p-2 duration-75 hover:border-b hover:border-b-pink-600">Home</a></li>
+                <li><a href="resume.html" class="block p-2 duration-75 hover:border-b hover:border-b-pink-600">Resume</a></li>
+                <li><a href="project.html" class="block p-2 duration-75 hover:border-b hover:border-b-pink-600">Projects</a></li>
+                <li><a href="contact.html" class="block p-2 duration-75 hover:border-b hover:border-b-pink-600">Contact</a></li>
+                <button id="dropdownDefaultButton" data-dropdown-toggle="dropdown" class="flex items-center si:py-2 si:translate-x-2 duration-150 hover:border-b hover:border-b-pink-600" type="button">My Study<svg class="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4" />
+                </svg>
+            </button>
+            <div id="dropdown" class="z-10 hidden  bg-white dark:bg-gray-800  rounded-lg shadow w-36">
+                <ul class="py-2 text-sm text-black" aria-labelledby="dropdownDefaultButton">
+                    <li>
+                        <a href="semester1.html" class="block  px-4 py-1 hover:bg-gray-50 hover:dark:bg-gray-600 text-black dark:text-white ">Semester 1</a>
+                    </li>
+                    <li>
+                        <a href="semester2.html" class="block  px-4 py-1 hover:bg-gray-50 hover:dark:bg-gray-600 text-black dark:text-white">Semester 2</a>
+                    </li>
+                    <li>
+                        <a href="semester3.html" class="block  px-4 py-1 hover:bg-gray-50 hover:dark:bg-gray-600 text-black dark:text-white">Semester 3</a>
+                    </li>
+                    <li>
+                        <a href="semester4.html" class="block  px-4 py-1 hover:bg-gray-50 hover:dark:bg-gray-600 text-black dark:text-white">Semester 4</a>
+                    </li>
+                </ul>
+            </div>
+            <button id="dropdownDefault" data-dropdown-toggle="dropdown1" class="flex items-center si:py-2 si:translate-x-2 duration-150 hover:border-b hover:border-b-pink-600" type="button">Entertaiment<svg class="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4" />
+            </svg>
+        </button>
+        <div id="dropdown1" class="z-10 hidden bg-white dark:bg-gray-800  rounded-lg shadow w-36">
+            <ul class="py-2 text-sm text-black " aria-labelledby="dropdownDefault">
+                <li>
+                    <a href="listenmusic.html" class="block  px-4 py-1 hover:bg-gray-50 hover:dark:bg-gray-600 text-black dark:text-white">Listen Music</a>
+                </li>
+                <li>
+                    <a href="playgames.html" class="block  px-4 py-1 hover:bg-gray-50 hover:dark:bg-gray-600 text-black dark:text-white">Play Games</a>
+                </li>
+                <li>
+                    <a href="error404.html" class="block  px-4 py-1 hover:bg-gray-50 hover:dark:bg-gray-600 text-black dark:text-white">Blog</a>
+                </li>
+                
+            </ul>
+        </div>
+            </ul>
+        </div>
+    </aside>
     <main id="content" class="py-20 opacity-0 transition-opacity duration-2000">
-            <divc class="grid grid-cols-2 gap-12 max-w-6xl mx-auto mt-20">       
-                    <div class=" bg-white shadow-2xl dark:bg-gray-800 rounded-lg w-[35rem]">
+            <div class="container grid grid-cols-2 si:grid-cols-1 sm:grid-cols-1 md:grid-cols-1 gap-12 max-w-6xl si:max-w-xs sm:max-w-lg md:max-w-lg lg:max-w-3xl mx-auto mt-20">       
+                    <div class=" bg-white shadow-2xl dark:bg-gray-800 rounded-lg w-[35rem] si:w-[20rem] sm:w-[30rem] md:w-[30rem] lg:w-[25rem]">
                         <div class="grid grid-cols-1 gap-6 m-12">
                             <div class="flex items-center gap-12">
                                 <div class="flex justify-center rounded-lg w-12 p-2 shadow-blue-600 bg-gradient-to-br from-blue-800 from-30% via-purple-600 via-60% to-pink-600 to-100%">
@@ -104,13 +157,13 @@
                                         <path d="m34.094 50.062-27.125 27.5c-0.15234-0.51562-0.22656-1.0547-0.21875-1.5938v-51.938c-0.003906-0.50781 0.058594-1.0117 0.1875-1.5 8.25 8.3672 19.223 19.484 27.156 27.531zm23.125 8.8438c-1.9062 1.9297-4.5078 3.0156-7.2188 3.0156s-5.3125-1.0859-7.2188-3.0156c-0.75-0.78125-2.2812-2.3125-4.3125-4.375l-27.031 27.375c0.46875 0.12891 0.95312 0.19141 1.4375 0.1875h74.25c0.48438 0.003906 0.96875-0.058594 1.4375-0.1875l-27.031-27.375c-2.0312 2.0625-3.5625 3.625-4.3125 4.375zm-16.562-11.094v0.03125c10.219 10.492 8.4766 10.512 18.688 0 8.707-8.8203 20.168-20.535 29.312-29.719-0.49609-0.15234-1.0117-0.22656-1.5312-0.21875h-74.25c-0.51953-0.007812-1.0352 0.066406-1.5312 0.21875 8.8516 8.9336 21.086 21.359 29.312 29.688zm52.406-25.281c-8.5664 8.7031-18.613 18.883-27.156 27.531l27.125 27.5c0.15234-0.51562 0.22656-1.0547 0.21875-1.5938v-51.938c0.003906-0.50781-0.058594-1.0117-0.1875-1.5z"/>
                                        </svg>
                                 </div>
-                                <a href="" class="underline text-pink-600 font-semibold">Muhammaddafa6279@gmail.com</a>
+                                <a href="" class="underline text-pink-600 font-semibold si:translate-y-11 si:-translate-x-[5rem]">Muhammaddafa6279@gmail.com</a>
                             </div>
 
                         </div>
             </div>
     
-                    <div class=" bg-white shadow-2xl dark:bg-gray-800 rounded-lg w-[35rem]">
+                    <div class=" bg-white shadow-2xl dark:bg-gray-800 rounded-lg w-[35rem] si:w-[20rem]  sm:w-[30rem] md:w-[30rem] lg:w-[25rem]">
                            <div class="grid grid-cols-1 gap-6 m-12">
                 <div class="flex items-center gap-12">
                         <div class="flex justify-center rounded-lg w-12 p-2 shadow-blue-600 bg-gradient-to-br from-blue-800 from-30% via-purple-600 via-60% to-pink-600 to-100%">
@@ -120,7 +173,7 @@
                      </div>
                 <div class="flex items-center gap-12">
                         <div class="flex justify-center rounded-lg w-12 p-2 shadow-blue-600 bg-gradient-to-br from-blue-800 from-30% via-purple-600 via-60% to-pink-600 to-100%">
-                         <svg class="w-8 fill-white" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 50 50">    <path d="M25,3C12.85,3,3,12.85,3,25c0,11.03,8.125,20.137,18.712,21.728V30.831h-5.443v-5.783h5.443v-3.848 c0-6.371,3.104-9.168,8.399-9.168c2.536,0,3.877,0.188,4.512,0.274v5.048h-3.612c-2.248,0-3.033,2.131-3.033,4.533v3.161h6.588 l-0.894,5.783h-5.694v15.944C38.716,45.318,47,36.137,47,25C47,12.85,37.15,3,25,3z"/></svg>
+                         <svg class="w-8 fill-white" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 50 50"><path d="M25,3C12.85,3,3,12.85,3,25c0,11.03,8.125,20.137,18.712,21.728V30.831h-5.443v-5.783h5.443v-3.848 c0-6.371,3.104-9.168,8.399-9.168c2.536,0,3.877,0.188,4.512,0.274v5.048h-3.612c-2.248,0-3.033,2.131-3.033,4.533v3.161h6.588 l-0.894,5.783h-5.694v15.944C38.716,45.318,47,36.137,47,25C47,12.85,37.15,3,25,3z"/></svg>
                         </div>
                         <a href="" class="underline text-pink-600 font-semibold">Muhammad Dafa Izul Haq</a>
                      </div>
@@ -134,8 +187,8 @@
                 </div>
             </div>
         </div>
-        <div>
-            <div class=" bg-gray-50 rounded-2xl dark:bg-gray-800 w-[1155px] pb-24">
+        <div class="si:max-w-xs sm:max-w-lg md:max-w-lg lg:max-w-2xl xl:max-w-7xl 2xl:max-w-6xl mx-auto">
+            <div class=" bg-gray-50 rounded-2xl dark:bg-gray-800 si:w-[20rem] sm:w-[30rem] md:w-[30rem] lg:w-[700px] 2xl:w-[1155px] pb-24">
                 <div class="flex justify-center mt-28">
                     <div class="flex justify-center mt-12 rounded-lg w-12 p-1 shadow-blue-600 bg-gradient-to-br from-blue-800 from-30% via-purple-600 via-60% to-pink-600 to-100%">
                         <svg class="w-8 fill-white" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="-5.0 -10.0 110.0 135.0">
@@ -146,38 +199,38 @@
                     <p class="text-[40px] text-center font-bold dark:text-white">Get in touch</p>
                     <p class="text-[20px] text-center text-gray-500 dark:text-white">Let's work together!</p>
 
-                    <div>
-                        <div class="ml-80 mt-12">
+                    
+                        <div class="ml-80 si:ml-2 sm:ml-4 md:ml-4 lg:ml-24 xl:ml-96 mt-12">
                             <form action="mailto:zulh16954@gmail.com" method="post" enctype="text/plain">
                                 <label for="name" class="block dark:text-white">Full Name</label>
-                                <input type="text" id="name" name="name" class="border border-gray-300 rounded-lg w-[33rem] p-2 outline-none duration-300 focus:ring-4">
+                                <input type="text" id="name" name="name" class="border border-gray-300 rounded-lg w-[33rem] si:w-[19rem] sm:w-[28rem] md:w-[28rem] p-2 outline-none duration-300 focus:ring-4">
                                 <label for="Email" class="block dark:text-white">Email address</label>
-                                <input type="text" id="email" name="email" class="border border-gray-300 rounded-lg w-[33rem] p-2 outline-none duration-300 focus:ring-4">
+                                <input type="text" id="email" name="email" class="border border-gray-300 rounded-lg w-[33rem] si:w-[19rem]  sm:w-[28rem] md:w-[28rem]  p-2 outline-none duration-300 focus:ring-4">
                                 <label for="phone_number" class="block dark:text-white">Phone number</label>
-                                <input type="tel" id="phone_number" name="phone_number" class="border border-gray-300 rounded-lg w-[33rem] p-2 outline-none duration-300 focus:ring-4">
+                                <input type="tel" id="phone_number" name="phone_number" class="border border-gray-300 rounded-lg w-[33rem] si:w-[19rem]  sm:w-[28rem] md:w-[28rem]  p-2 outline-none duration-300 focus:ring-4">
                                 <label for="Message" class="block dark:text-white">Message</label>
-                                <textarea type="text" id="Message" name="Message" class="border border-gray-300 rounded-lg w-[33rem] p-2 outline-none duration-300 focus:ring-4"></textarea>
-                                <button type="submit" class="block rounded-lg bg-blue-700 duration-300 hover:bg-blue-800 text-white w-[33rem] text-[20px] text-center p-2">Submit</button>
+                                <textarea type="text" id="Message" name="Message" class="border border-gray-300 rounded-lg w-[33rem] si:w-[19rem]  sm:w-[28rem] md:w-[28rem] p-2 outline-none duration-300 focus:ring-4"></textarea>
+                                <button type="submit" class="block rounded-lg bg-blue-700 duration-300 hover:bg-blue-800 si:mt-6 sm:mt-8 md:mt-8 text-white w-[33rem] si:w-[19rem]  sm:w-[28rem] md:w-[28rem]  text-[20px] text-center p-2">Submit</button>
                             </form>
                         </div>
-                    </div>
+                    
                 
             </div>
         </div>
     </main>
-    <footer>
-        <div class="container flex justify-around mt-4 space-x-[25rem] mb-4">
-            <p class="dark:text-white">Copyright©Pery RoyBowo 2023</p>
-            <ul class="flex space-x-10 underline text-blue-600">
+    <footer class="">
+        <div class="container mx-auto si:ml-6 si:block si:justify-center flex justify-around mt-4 si:space-x-12 xl:space-x-[25rem] 2xl:space-x-[25rem] mb-4">
+            <p class="dark:text-white hp:text-sm si:text-xs si:translate-x-[73px]">Copyright©Pery RoyBowo 2023</p>
+            <ul class="flex space-x-10 hp:space-x-2 hp:text-sm si:text-sm underline text-blue-600">
                 <li><a href="">Project</a></li>
                 <li><a href="">Resume</a></li>
                 <li><a href="">Contact</a></li>
             </ul>
         </div>
     </footer>
-    <div id="wa" class="fixed bottom-4 right-4 z-50 opacity-0 transition-opacity duration-2000">
+    <div id="wa" class="fixed bottom-4 si:bottom-12 right-2 z-50 opacity-0 transition-opacity duration-2000">
         <a class="block w-16 h-16" href="https://wa.me/62123456789" rel="noopener" title="Open WhatsApp" target="_blank">
-            <svg width="64" height="64" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+            <svg class="si:w-12 si:h-12" width="64" height="64" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
                 <circle cx="32" cy="32" r="32" fill="#008361"></circle>
                 <path d="M11.375 52.625L14.2745 42.0323C12.4853 38.9317 11.5452 35.4169 11.5469 31.8127C11.552 20.5445 20.7216 11.375 31.988 11.375C37.4553 11.3767 42.5875 13.5062 46.4478 17.37C50.3064 21.2337 52.4308 26.3694 52.4291 31.8316C52.4239 43.1014 43.2544 52.2709 31.988 52.2709C28.5677 52.2692 25.1972 51.4116 22.2117 49.7822L11.375 52.625ZM22.7136 46.0817C25.5942 47.7919 28.3442 48.8162 31.9811 48.818C41.3448 48.818 48.9727 41.197 48.9778 31.8281C48.9813 22.4403 41.3895 14.8297 31.9948 14.8262C22.6242 14.8262 15.0016 22.4472 14.9981 31.8144C14.9964 35.6386 16.117 38.502 17.9991 41.4978L16.282 47.7678L22.7136 46.0817ZM42.285 36.6905C42.1578 36.4773 41.8175 36.3502 41.3053 36.0941C40.7948 35.838 38.2837 34.6022 37.8145 34.432C37.347 34.2619 37.0067 34.1759 36.6647 34.6881C36.3244 35.1986 35.3447 36.3502 35.0473 36.6905C34.75 37.0308 34.4509 37.0738 33.9405 36.8177C33.43 36.5616 31.7834 36.0236 29.8327 34.2825C28.315 32.9281 27.2889 31.2558 26.9916 30.7436C26.6942 30.2331 26.9606 29.9564 27.215 29.702C27.4453 29.4734 27.7255 29.1056 27.9816 28.8066C28.2411 28.5109 28.3253 28.2978 28.4972 27.9558C28.6673 27.6155 28.5831 27.3164 28.4542 27.0603C28.3253 26.8059 27.3044 24.2914 26.8798 23.2688C26.4639 22.2736 26.0428 22.4077 25.73 22.3922L24.7503 22.375C24.41 22.375 23.8566 22.5022 23.3891 23.0144C22.9216 23.5266 21.6016 24.7606 21.6016 27.2752C21.6016 29.7897 23.432 32.2183 23.6864 32.5586C23.9425 32.8989 27.2872 38.0586 32.4108 40.2706C33.6294 40.7966 34.5816 41.1111 35.3223 41.3466C36.5461 41.735 37.6598 41.68 38.5398 41.5494C39.5212 41.4033 41.5614 40.3136 41.9877 39.1208C42.4139 37.9262 42.4139 36.9036 42.285 36.6905Z" fill="white"></path>
             </svg>
@@ -196,7 +249,16 @@
 </body>
 </html>
 <script>
-    var themeToggleDarkIcon = document.getElementById('theme-toggle-dark-icon');
+    const sidebarToggle = document.getElementById('sidebar-toggle');
+        const sidebar = document.getElementById('sidebar');
+        const content = document.getElementById('content');
+
+        sidebarToggle.addEventListener('click', () => {
+            sidebar.classList.toggle('-translate-x-full');
+            content.classList.toggle('opacity-50');
+        });
+        
+var themeToggleDarkIcon = document.getElementById('theme-toggle-dark-icon');
 var themeToggleLightIcon = document.getElementById('theme-toggle-light-icon');
 
 // Change the icons inside the button based on previous settings
