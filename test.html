@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="website icon" type="png" href="bapak.png">
+    <link rel="stylesheet" href="output/contack.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+    <script>
+        // On page load or when changing themes, best to add inline in `head` to avoid FOUC
+        if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.classList.add('dark');
+        } else {
+            document.documentElement.classList.remove('dark')
+        }
+    </script>
+    <title>Pery RoyBowo</title>
+</head>
+<body class="dark:bg-gelap">
+    <header class="fixed top-0 bg-white dark:bg-gray-800 z-50 w-full p-3">
+        <!--LOADER -->
+        <div id="loader-container" class="fixed inset-0 flex items-center justify-center bg-white dark:bg-black z-50 text-black dark:text-white gap-2 font-bold hover:cursor-default">
+            Loading
+            <svg class="bg-black dark:bg-white border-4 border-red-600 animate-spin" version="1.1" id="loader" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 50 50" xml:space="preserve" width="50" height="50">
+              <circle fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round" cx="25" cy="25" r="20" style="opacity: 0.2;"/>
+              <circle fill="#000" stroke="#fff" stroke-width="4" stroke-linecap="round" cx="25" cy="25" r="20">
+              </circle>
+            </svg>
+        </div>
+        <!--END LOADER -->
+        <nav class="flex justify-between items-center">
+            <button id="sidebar-toggle" class="text-gray-500 dark:text-gray-400 focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+            <p class="text-2xl text-blue-600 font-bold">Pery RoyBowo</p>
+            <ul class="flex justify-center space-x-6  text-gray-500 font-semibold dark:text-white">
+                <li><a href="index.html" class="duration-75 hover:border-b hover:border-b-pink-600">Home</a></li>
+                <li><a href="resume.html" class="duration-75 hover:border-b hover:border-b-pink-600">Resume</a></li>
+                <li><a href="project.html" class="duration-75 hover:border-b hover:border-b-pink-600">Projects</a></li>
+                <li><a href="contact.html" class="duration-75 hover:border-b hover:border-b-pink-600">Contact</a></li>
+            </ul>
+            <button id="theme-toggle" type="button" class="text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5">
+                <svg id="theme-toggle-dark-icon" class="hidden w-5 h-5 fill-gray-800" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
+                <svg id="theme-toggle-light-icon" class="hidden w-5 h-5 fill-yellow-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
+            </button>
+        </nav>
+    </header>
+    <aside id="sidebar" class="fixed inset-y-0 left-0 bg-white dark:bg-gray-800 w-64 transform -translate-x-full transition-transform duration-300 z-40">
+        <div class="p-4">
+            <ul class="space-y-2 text-gray-700 dark:text-gray-300">
+                <li><a href="index.html" class="block p-2 hover:bg-gray-200 dark:hover:bg-gray-700">Home</a></li>
+                <li><a href="resume.html" class="block p-2 hover:bg-gray-200 dark:hover:bg-gray-700">Resume</a></li>
+                <li><a href="project.html" class="block p-2 hover:bg-gray-200 dark:hover:bg-gray-700">Projects</a></li>
+                <li><a href="contact.html" class="block p-2 hover:bg-gray-200 dark:hover:bg-gray-700">Contact</a></li>
+            </ul>
+        </div>
+    </aside>
+    <main id="content" class="py-44 transition-opacity duration-1000">
+        <div class="text-center text-[48px] font-semibold">
+            <p class="text-transparent bg-clip-text bg-gradient-to-r from-blue-800 from-30% via-purple-600 via-40% to-pink-600 to-60% text-[48px]">Mata Kuliah</p>
+        </div>
+        <div class="flex justify-center">
+            <div class="bg-white dark:bg-gray-800 shadow-2xl w-[75rem] pb-12 text-center mt-12">
+                <div class="mt-4">
+                    <a href="" class="block underline py-1 text-pink-600  font-bold">Bahasa Inggris</a>
+                    <a href="" class="block underline py-1 text-pink-600 font-bold">Dasar pemograman</a>
+                    <a href="" class="block underline py-1 text-pink-600  font-bold">Entrepreneurship</a>
+                    <a href="" class="block underline py-1 text-pink-600  font-bold">Logika & Algoritma</a>    
+                    <a href="" class="block underline py-1 text-pink-600  font-bold">PTIK</a>    
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container flex justify-around pb-8 text-gray-500 dark:text-gray-400 mt-8">
+            <div>
+                <h4 class="font-bold">Address</h4>
+                <p>State Polytechnic of Jember</p>
+                <p>Jl. Mastrip PO.BOX 164 Jember</p>
+            </div>
+            <div>
+                <h4 class="font-bold">Email</h4>
+                <p>statepolytechnicjember@gmail.com</p>
+            </div>
+            <div>
+                <h4 class="font-bold">Phone</h4>
+                <p>(0331) 333532</p>
+            </div>
+        </div>
+    </footer>
+    <script>
+        // JavaScript to handle sidebar toggle
+        const sidebarToggle = document.getElementById('sidebar-toggle');
+        const sidebar = document.getElementById('sidebar');
+        const content = document.getElementById('content');
+
+        sidebarToggle.addEventListener('click', () => {
+            sidebar.classList.toggle('-translate-x-full');
+            content.classList.toggle('opacity-50');
+        });
+
+        // JavaScript to handle theme toggle
+        const themeToggleDarkIcon = document.getElementById('theme-toggle-dark-icon');
+        const themeToggleLightIcon = document.getElementById('theme-toggle-light-icon');
+        const themeToggleBtn = document.getElementById('theme-toggle');
+
+        if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            themeToggleLightIcon.classList.remove('hidden');
+        } else {
+            themeToggleDarkIcon.classList.remove('hidden');
+        }
+
+        themeToggleBtn.addEventListener('click', () => {
+            themeToggleDarkIcon.classList.toggle('hidden');
+            themeToggleLightIcon.classList.toggle('hidden');
+
+            if (localStorage.getItem('color-theme')) {
+                if (localStorage.getItem('color-theme') === 'light') {
+                    document.documentElement.classList.add('dark');
+                    localStorage.setItem('color-theme', 'dark');
+                } else {
+                    document.documentElement.classList.remove('dark');
+                    localStorage.setItem('color-theme', 'light');
+                }
+            } else {
+                if (document.documentElement.classList.contains('dark')) {
+                    document.documentElement.classList.remove('dark');
+                    localStorage.setItem('color-theme', 'light');
+                } else {
+                    document.documentElement.classList.add('dark');
+                    localStorage.setItem('color-theme', 'dark');
+                }
+            }
+        });
+
+        // JavaScript to handle loader
+        window.addEventListener('load', () => {
+            const loaderContainer = document.getElementById('loader-container');
+            loaderContainer.classList.add('hidden');
+        });
+    </script>
+</body>
+</html>
