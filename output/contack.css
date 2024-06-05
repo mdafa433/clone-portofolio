@@ -894,6 +894,14 @@ video {
   margin-top: 10rem;
 }
 
+.ml-40 {
+  margin-left: 10rem;
+}
+
+.ml-20 {
+  margin-left: 5rem;
+}
+
 .box-border {
   box-sizing: border-box;
 }
@@ -2558,11 +2566,6 @@ video {
   padding-right: 1.5rem;
 }
 
-.px-\[21rem\] {
-  padding-left: 21rem;
-  padding-right: 21rem;
-}
-
 .py-1 {
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
@@ -3592,6 +3595,14 @@ video {
     float: none;
   }
 
+  .si\:-ml-20 {
+    margin-left: -5rem;
+  }
+
+  .si\:-ml-40 {
+    margin-left: -10rem;
+  }
+
   .si\:ml-12 {
     margin-left: 3rem;
   }
@@ -3630,6 +3641,54 @@ video {
 
   .si\:mt-6 {
     margin-top: 1.5rem;
+  }
+
+  .si\:-ml-4 {
+    margin-left: -1rem;
+  }
+
+  .si\:-ml-6 {
+    margin-left: -1.5rem;
+  }
+
+  .si\:-ml-8 {
+    margin-left: -2rem;
+  }
+
+  .si\:-ml-28 {
+    margin-left: -7rem;
+  }
+
+  .si\:-ml-44 {
+    margin-left: -11rem;
+  }
+
+  .si\:mt-\[30rem\] {
+    margin-top: 30rem;
+  }
+
+  .si\:-ml-52 {
+    margin-left: -13rem;
+  }
+
+  .si\:-ml-36 {
+    margin-left: -9rem;
+  }
+
+  .si\:-ml-5 {
+    margin-left: -1.25rem;
+  }
+
+  .si\:-ml-\[12rem\] {
+    margin-left: -12rem;
+  }
+
+  .si\:-ml-\[11rem\] {
+    margin-left: -11rem;
+  }
+
+  .si\:-ml-\[13rem\] {
+    margin-left: -13rem;
   }
 
   .si\:block {
@@ -3672,60 +3731,42 @@ video {
     width: 20rem;
   }
 
+  .si\:w-\[2rem\] {
+    width: 2rem;
+  }
+
   .si\:w-\[5rem\] {
     width: 5rem;
   }
 
-  .si\:max-w-\[19rem\] {
-    max-width: 19rem;
+  .si\:w-\[rem\] {
+    width: rem;
+  }
+
+  .si\:w-\[25rem\] {
+    width: 25rem;
+  }
+
+  .si\:w-\[10rem\] {
+    width: 10rem;
   }
 
   .si\:max-w-xs {
     max-width: 20rem;
   }
 
-  .si\:max-w-\[rem\] {
-    max-width: rem;
-  }
-
-  .si\:max-w-\[14rem\] {
-    max-width: 14rem;
-  }
-
-  .si\:max-w-\[27rem\] {
-    max-width: 27rem;
-  }
-
-  .si\:max-w-\[2rem\] {
-    max-width: 2rem;
-  }
-
-  .si\:max-w-\[24rem\] {
-    max-width: 24rem;
-  }
-
-  .si\:max-w-\[6rem\] {
-    max-width: 6rem;
-  }
-
-  .si\:max-w-\[\] {
-    max-width: ;
-  }
-
-  .si\:max-w-\[28rem\] {
-    max-width: 28rem;
-  }
-
-  .si\:max-w-\[32rem\] {
-    max-width: 32rem;
-  }
-
-  .si\:max-w-xl {
-    max-width: 36rem;
+  .si\:-translate-x-6 {
+    --tw-translate-x: -1.5rem;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   }
 
   .si\:-translate-x-\[5rem\] {
     --tw-translate-x: -5rem;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+
+  .si\:-translate-x-\[6rem\] {
+    --tw-translate-x: -6rem;
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   }
 
@@ -3744,13 +3785,18 @@ video {
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   }
 
-  .si\:translate-x-16 {
-    --tw-translate-x: 4rem;
+  .si\:translate-y-\[43rem\] {
+    --tw-translate-y: 43rem;
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   }
 
-  .si\:-translate-x-6 {
-    --tw-translate-x: -1.5rem;
+  .si\:translate-y-\[40rem\] {
+    --tw-translate-y: 40rem;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+
+  .si\:translate-y-\[38rem\] {
+    --tw-translate-y: 38rem;
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   }
 
@@ -3762,32 +3808,20 @@ video {
     justify-content: space-evenly;
   }
 
-  .si\:space-x-\[5rem\] > :not([hidden]) ~ :not([hidden]) {
-    --tw-space-x-reverse: 0;
-    margin-right: calc(5rem * var(--tw-space-x-reverse));
-    margin-left: calc(5rem * calc(1 - var(--tw-space-x-reverse)));
-  }
-
-  .si\:space-x-\[2rem\] > :not([hidden]) ~ :not([hidden]) {
-    --tw-space-x-reverse: 0;
-    margin-right: calc(2rem * var(--tw-space-x-reverse));
-    margin-left: calc(2rem * calc(1 - var(--tw-space-x-reverse)));
-  }
-
-  .si\:space-x-\[1rem\] > :not([hidden]) ~ :not([hidden]) {
-    --tw-space-x-reverse: 0;
-    margin-right: calc(1rem * var(--tw-space-x-reverse));
-    margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
-  }
-
-  .si\:space-x-\[0rem\] > :not([hidden]) ~ :not([hidden]) {
-    --tw-space-x-reverse: 0;
-    margin-right: calc(0rem * var(--tw-space-x-reverse));
-    margin-left: calc(0rem * calc(1 - var(--tw-space-x-reverse)));
-  }
-
   .si\:overflow-hidden {
     overflow: hidden;
+  }
+
+  .si\:p-12 {
+    padding: 3rem;
+  }
+
+  .si\:p-32 {
+    padding: 8rem;
+  }
+
+  .si\:p-\[10rem\] {
+    padding: 10rem;
   }
 
   .si\:py-2 {
@@ -3819,6 +3853,14 @@ video {
     font-size: 33.725px;
   }
 
+  .si\:text-\[36\.775px\] {
+    font-size: 36.775px;
+  }
+
+  .si\:text-\[5px\] {
+    font-size: 5px;
+  }
+
   .si\:text-sm {
     font-size: 0.875rem;
     line-height: 1.25rem;
@@ -3827,6 +3869,18 @@ video {
   .si\:text-xs {
     font-size: 0.75rem;
     line-height: 1rem;
+  }
+
+  .si\:text-\[10px\] {
+    font-size: 10px;
+  }
+
+  .si\:text-\[34\.775px\] {
+    font-size: 34.775px;
+  }
+
+  .si\:text-\[30\.775px\] {
+    font-size: 30.775px;
   }
 }
 
@@ -4082,8 +4136,24 @@ video {
     margin-left: 20rem;
   }
 
+  .xl\:ml-\[9rem\] {
+    margin-left: 9rem;
+  }
+
+  .xl\:mt-\[55rem\] {
+    margin-top: 55rem;
+  }
+
+  .xl\:flex {
+    display: flex;
+  }
+
   .xl\:hidden {
     display: none;
+  }
+
+  .xl\:w-\[35rem\] {
+    width: 35rem;
   }
 
   .xl\:max-w-7xl {
@@ -4095,10 +4165,39 @@ video {
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   }
 
+  .xl\:translate-x-\[18rem\] {
+    --tw-translate-x: 18rem;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+
+  .xl\:translate-y-\[43rem\] {
+    --tw-translate-y: 43rem;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+
+  .xl\:justify-center {
+    justify-content: center;
+  }
+
   .xl\:space-x-\[25rem\] > :not([hidden]) ~ :not([hidden]) {
     --tw-space-x-reverse: 0;
     margin-right: calc(25rem * var(--tw-space-x-reverse));
     margin-left: calc(25rem * calc(1 - var(--tw-space-x-reverse)));
+  }
+
+  .xl\:px-\[21rem\] {
+    padding-left: 21rem;
+    padding-right: 21rem;
+  }
+
+  .xl\:px-\[28rem\] {
+    padding-left: 28rem;
+    padding-right: 28rem;
+  }
+
+  .xl\:px-\[2rem\] {
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
 
   .xl\:text-center {
@@ -4106,7 +4205,31 @@ video {
   }
 }
 
+@media (min-width: 176px) and (max-width: 413px) {
+  @media (min-width: 1280px) {
+    .si\:xl\:mt-\[55rem\] {
+      margin-top: 55rem;
+    }
+  }
+}
+
 @media (min-width: 1536px) {
+  .\32xl\:ml-\[38rem\] {
+    margin-left: 38rem;
+  }
+
+  .\32xl\:mt-0 {
+    margin-top: 0px;
+  }
+
+  .\32xl\:mt-16 {
+    margin-top: 4rem;
+  }
+
+  .\32xl\:mt-20 {
+    margin-top: 5rem;
+  }
+
   .\32xl\:w-\[1155px\] {
     width: 1155px;
   }
@@ -4120,10 +4243,20 @@ video {
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   }
 
+  .\32xl\:translate-y-0 {
+    --tw-translate-y: 0px;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+
   .\32xl\:space-x-\[25rem\] > :not([hidden]) ~ :not([hidden]) {
     --tw-space-x-reverse: 0;
     margin-right: calc(25rem * var(--tw-space-x-reverse));
     margin-left: calc(25rem * calc(1 - var(--tw-space-x-reverse)));
+  }
+
+  .\32xl\:px-\[29rem\] {
+    padding-left: 29rem;
+    padding-right: 29rem;
   }
 
   .\32xl\:text-left {
