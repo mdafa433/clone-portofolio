@@ -64,7 +64,7 @@ module.exports = {
       ],
     },
     screens: {
-      'si': { 'min': '375px', 'max': '413px' },
+      'si': { 'min': '176px', 'max': '413px' },
       
       'hp': { 'min': '414px', 'max': '639px' },
       

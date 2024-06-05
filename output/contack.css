@@ -558,9 +558,9 @@ video {
   width: 100%;
 }
 
-@media (min-width: 375px) {
+@media (min-width: 176px) {
   .container {
-    max-width: 375px;
+    max-width: 176px;
   }
 }
 
@@ -892,10 +892,6 @@ video {
 
 .mt-\[10rem\] {
   margin-top: 10rem;
-}
-
-.ml-72 {
-  margin-left: 18rem;
 }
 
 .box-border {
@@ -3365,9 +3361,9 @@ video {
     width: 100%;
   }
 
-  @media (min-width: 375px) {
+  @media (min-width: 176px) {
     .sm\:container {
-      max-width: 375px;
+      max-width: 176px;
     }
   }
 
@@ -3587,7 +3583,7 @@ video {
   --tw-ring-color: rgb(55 65 81 / var(--tw-ring-opacity));
 }
 
-@media (min-width: 375px) and (max-width: 413px) {
+@media (min-width: 176px) and (max-width: 413px) {
   .si\:bottom-12 {
     bottom: 3rem;
   }
@@ -3608,12 +3604,12 @@ video {
     margin-left: 5rem;
   }
 
-  .si\:ml-\[7rem\] {
-    margin-left: 7rem;
+  .si\:ml-\[6rem\] {
+    margin-left: 6rem;
   }
 
-  .si\:ml-\[9rem\] {
-    margin-left: 9rem;
+  .si\:ml-\[8rem\] {
+    margin-left: 8rem;
   }
 
   .si\:mr-1 {
@@ -3634,18 +3630,6 @@ video {
 
   .si\:mt-6 {
     margin-top: 1.5rem;
-  }
-
-  .si\:ml-\[8rem\] {
-    margin-left: 8rem;
-  }
-
-  .si\:ml-\[6rem\] {
-    margin-left: 6rem;
-  }
-
-  .si\:ml-0 {
-    margin-left: 0px;
   }
 
   .si\:block {
@@ -3710,18 +3694,13 @@ video {
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   }
 
-  .si\:translate-x-\[1rem\] {
-    --tw-translate-x: 1rem;
+  .si\:translate-x-\[0\.7rem\] {
+    --tw-translate-x: 0.7rem;
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   }
 
   .si\:translate-y-11 {
     --tw-translate-y: 2.75rem;
-    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-  }
-
-  .si\:translate-x-\[0\.7rem\] {
-    --tw-translate-x: 0.7rem;
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   }
 
@@ -4031,10 +4010,6 @@ video {
 }
 
 @media (min-width: 1280px) {
-  .xl\:ml-96 {
-    margin-left: 24rem;
-  }
-
   .xl\:ml-80 {
     margin-left: 20rem;
   }
