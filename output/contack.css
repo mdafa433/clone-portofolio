@@ -3684,6 +3684,46 @@ video {
     max-width: 20rem;
   }
 
+  .si\:max-w-\[rem\] {
+    max-width: rem;
+  }
+
+  .si\:max-w-\[14rem\] {
+    max-width: 14rem;
+  }
+
+  .si\:max-w-\[27rem\] {
+    max-width: 27rem;
+  }
+
+  .si\:max-w-\[2rem\] {
+    max-width: 2rem;
+  }
+
+  .si\:max-w-\[24rem\] {
+    max-width: 24rem;
+  }
+
+  .si\:max-w-\[6rem\] {
+    max-width: 6rem;
+  }
+
+  .si\:max-w-\[\] {
+    max-width: ;
+  }
+
+  .si\:max-w-\[28rem\] {
+    max-width: 28rem;
+  }
+
+  .si\:max-w-\[32rem\] {
+    max-width: 32rem;
+  }
+
+  .si\:max-w-xl {
+    max-width: 36rem;
+  }
+
   .si\:-translate-x-\[5rem\] {
     --tw-translate-x: -5rem;
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -3704,6 +3744,16 @@ video {
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   }
 
+  .si\:translate-x-16 {
+    --tw-translate-x: 4rem;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+
+  .si\:-translate-x-6 {
+    --tw-translate-x: -1.5rem;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+
   .si\:grid-cols-1 {
     grid-template-columns: repeat(1, minmax(0, 1fr));
   }
@@ -3716,6 +3766,24 @@ video {
     --tw-space-x-reverse: 0;
     margin-right: calc(5rem * var(--tw-space-x-reverse));
     margin-left: calc(5rem * calc(1 - var(--tw-space-x-reverse)));
+  }
+
+  .si\:space-x-\[2rem\] > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-x-reverse: 0;
+    margin-right: calc(2rem * var(--tw-space-x-reverse));
+    margin-left: calc(2rem * calc(1 - var(--tw-space-x-reverse)));
+  }
+
+  .si\:space-x-\[1rem\] > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-x-reverse: 0;
+    margin-right: calc(1rem * var(--tw-space-x-reverse));
+    margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
+  }
+
+  .si\:space-x-\[0rem\] > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-x-reverse: 0;
+    margin-right: calc(0rem * var(--tw-space-x-reverse));
+    margin-left: calc(0rem * calc(1 - var(--tw-space-x-reverse)));
   }
 
   .si\:overflow-hidden {
